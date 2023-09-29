@@ -96,17 +96,6 @@ public:
             cout << "Given dimension is invalid! ";
     }
 
-    // void multiply(Matrix *ptr1,Matrix *ptr2){
-    //      if (ptr1->r == ptr2->r && ptr1->c == ptr1->c)
-    //     {
-
-
-    //     }
-    //     else
-    //     cout<<"Invalid Dimension Entered";
-
-
-    // }
     void multiply(Matrix *ptr1, Matrix *ptr2)
     {
         if (ptr1->c == ptr2->r)
@@ -177,20 +166,20 @@ int main()
     m2.accept();
     m2.print();
 
-    cout << "Enter matrix dimension X and Y" << endl;
-    int p, q;
-    cin >> p >> q;
+    // cout << "Enter matrix dimension X and Y" << endl;
+    // int p, q;
+    // cin >> p >> q;
 
-    Matrix m3(p, q);
-    m3.accept();
-    m3.print();
+    // Matrix m3(p, q);
+    // m3.accept();
+    // m3.print();
 
-    Matrix m4(x,q);
+    // Matrix m4(x,q);
     // m4.Add(&m2, &m3);
     // m4.subtract(&m2,&m3);
-    m4.multiply(&m2, &m3);
+    // m4.multiply(&m2, &m3);
     // m4.print();
 
-    
-    // m4.transpose(&m2);
+    Matrix m5(y,x);
+    m5.transpose(&m2);
 }
