@@ -359,9 +359,6 @@ void Designation(employee **arr, int index)
             salesmgr++;
     }
 
-
-    cout<<"Manager "<<mgr<<" Salesman "<<salesmn<<" sales manager "<<salesmgr<<endl;
-
     if (mgr != 0)
     {
         cout << "********Manager******** " << endl;
